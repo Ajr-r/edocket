@@ -22,13 +22,15 @@
     justify-content: center;
 }
 .dbtn{
-    position: absolute;
+    /* position: absolute; */
     right: 340px;
-    width: 60px;
+    width: 70px;
     border-radius: 5px;
+    transform: translate(630px,-240px);
     border: none;
     border: 1px solid gray;
     transition: background-color 0.5s;
+    /* background-color: aquamarine; */
 }
 .dbtn:hover{
     background-color: #bd194f;
@@ -95,7 +97,7 @@
     margin-top: 40px;
     border: 1px solid grey;
     width: 800px;
-    height: 300px;
+    height: 350px;
     padding: 25px;
 }
 .form input{
@@ -119,11 +121,60 @@ table{
 }
 .form button, .sub button{
     margin: 10px;
-    width: 60px;
+    width: 80px;
     border: none;
     border: 1px solid black;
     transition:background-color 0.5s  ;
 }
 .form button:hover,.sub button:hover{
     background-color: green;
+}
+
+
+@media screen and (max-width:600px){ 
+   .home{
+    margin-top: 150px;
+    /* background-color: #65a366; */
+   }
+   .form{
+    width: 380px;
+    padding: 0;
+    margin-top: 140px;
+    height: 350px;
+}
+.form input{
+    margin-top: 3px;
+}
+   select{
+    width: 150px;
+   }
+   .sub{
+    margin-top: 200px;
+    font-size: 0.6rem;
+   }
+   .veiw{
+    margin-top: 30px;
+   }
+   .card{
+    font-size: 0.9rem;
+    width: 310px;
+    height: 400px !important;
+   }
+   .card table{
+    font-size: 0.9rem;
+    width: 338px !important;
+    margin-left: -10px;
+    /* width: 0px !important; */
+    /* width: 50px !important; */
+   }
+   .card td{
+    width: 70px !important;
+   }
+   .dbtn{
+    position:relative;
+    /* transform: translateX(0); */
+    left:-370px;
+    top: 14px;
+    
+   }
 }
