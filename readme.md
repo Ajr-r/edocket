@@ -3,6 +3,7 @@
 The Edocket app is a web-based platform designed for filling in forms to generate dockets that can be viewed and managed. It's built using the MERN (MongoDB, Express, React, Node.js) stack.
 
 https://edocket.vercel.app/
+https://edocket-ajr-rs-projects.vercel.app/
 
 ## Features
 
@@ -29,6 +30,13 @@ Follow these steps to get the Edocket app up and running on your local machine:
 4. Start the server: `cd server && node app.js`
 5. Open a web browser and visit `http://localhost:3000` to access the Edocket app.
 6. To modify the front-end `cd ./client/npm install && npm run serve_d`
+
+
+## Sample data alredu present in db
+1.name:dd
+2.name:testhani
+3.name:qa
+
 
 ## Note
 
