@@ -1,0 +1,129 @@
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/main.css ***!
+  \***********************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Arapey|Cantarell|Comfortaa|Khand|Russo+One|Ubuntu);
+/*!***************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/main.css (1) ***!
+  \***************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono&display=swap);
+/*!***************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/main.css (2) ***!
+  \***************************************************************************/
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Space Mono', monospace;
+}
+.home, .createdocket, .veiw, .sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dbtn{
+    position: absolute;
+    right: 340px;
+    width: 60px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid gray;
+    transition: background-color 0.5s;
+}
+.dbtn:hover{
+    background-color: #bd194f;
+}
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+.modal-content{
+    transform: translateY(-200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: aliceblue;
+    padding: 20px;
+    border: 1px solid black;
+    animation: entry 0.5s forwards;
+}
+.modal button{
+    
+    width: 60px;
+
+    margin: 10px;
+    margin-top: 20px;
+}
+@keyframes entry {
+    0%{
+        opacity: 0;
+        transform: translateY(-120px);
+    }
+    100%{
+         opacity: 1;
+        transform: translateY(-170px);       
+    }
+}
+.home{
+    margin-top: 50px;
+}
+.home button{
+    padding: 5px;
+    border: none;
+    border: 1px solid black;
+    outline: none;
+    margin: 10px;
+    transition: background-color 0.5s ;
+}  
+.home button:hover{
+    background-color: #65a366;
+} 
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    border: 1px solid grey;
+    width: 800px;
+    height: 300px;
+    padding: 25px;
+}
+.form input{
+    width: 130px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 4px;
+    margin-left: 40px;
+    
+    
+}
+select{
+    margin: 4px;
+    width: 400px;
+    margin-left: 40px;
+
+}
+table{
+    margin-top: 20px;
+}
+.form button, .sub button{
+    margin: 10px;
+    width: 60px;
+    border: none;
+    border: 1px solid black;
+    transition:background-color 0.5s  ;
+}
+.form button:hover,.sub button:hover{
+    background-color: green;
+}
