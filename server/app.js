@@ -66,8 +66,9 @@ function parse() {
                     j_data['sname'] = sname;
                     j_data['lookup'] = lookup;
                     try {
-
-                        fs.writeFile('./db/db.json', JSON.stringify(j_data), 'utf8', () => { })
+                        const file = path.join(process.cwd(), 'files', 'db.json');
+                        console.log(file)
+                        fs.writeFile(file, JSON.stringify(j_data), 'utf8', () => { })
                         flag = true
                         console.log('excel file parsed and json file written')
                     }
@@ -84,7 +85,8 @@ parse()
 
 function read() {
     try {
-        const data = fs.readFileSync('./db/db.json', 'utf8');
+        const file = path.join(process.cwd(), 'files', 'db.json');
+        const data = fs.readFileSync(file, 'utf8');
         const jsonData = JSON.parse(data);
         sname = jsonData['sname'];
         // console.log('sname type:', typeof sname);
@@ -106,6 +108,10 @@ app.get('/api/list', (req, res) => {
     // res.header('Cache-Control', 'public, max-age=3600');
     res.send([...sname])
 
+})
+app.get('/api/test',(req,res)=>{
+    read()
+    res.send('done')
 })
 
 
